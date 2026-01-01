@@ -1,0 +1,44 @@
+# Components
+- HVAC Unit
+  - LG ARNU123NJA4 
+- HVAC Controller
+  - LG PREMTA000
+- Device
+  - PCB
+    - 0.115mm Copper
+    - 0.508mm FR-4
+    - 0.115mm Copper
+  - Connector
+    - CN-REMO conformant female connector
+      - Can be sourced from part 2 of official connector
+      - On edge, horizontal mount, short end, opposite from antenna
+  - LIN SBC
+    - Chip: Texas Instruments TLIN14313-Q1
+      - SPI control
+      - Responder node
+      - VQFN package
+    - Resistors: ?
+    - Capacitors: ?
+    - Diodes: ?
+  - Wireless SoC
+    - Chip: Nordic Semiconductor nRF54L10
+      - QFN package
+    - Regulator Interface
+      - Capacitors: ?
+      - Inductors: ?
+      - Ferrite Bead: 120 Ohm @ 100MHz, 200mA, 500 mOhm Max
+    - Antenna Interface
+      - Inductors: ?
+      - Capacitors: ?
+    - Reset Interface
+      - Resistor: ?
+      - Capacitor: ?
+  - Clock
+    - 32 MHz crystal: XTAL SMD 2016, 32MHz, Cl=8pF, Tot: ±40ppm
+      - Capacitors: ?
+    - 32.768 kHz crystal: XTAL SMD 2012, 32.768kHz, 9pF, ±20ppm
+      - Capacitors: ?
+  - Antenna
+    - 2.4GHz Loop Antenna: Abracon AANI-CH-0070 
+      - 5.1 pF Capacitor: Murata GJM1555C1H5R1WB01
+      - 2.2 nH Inductor: Murata LQW15AN2N2C10
