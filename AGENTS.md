@@ -1,18 +1,56 @@
 # Project objectives
-- An LG HVAC controller tap that can send/receive commands
-- Wireless SoC: Nordic Semiconductor nRF54L10
-- LIN SBC: Texas Instruments TLIN14313-Q1
+- HVAC Controller: LG PREMTA000
+- LIN SBC
+  - Unit-facing: Texas Instruments TLIN14313-Q1
+  - Controller-facing (Follower): Texas Instruments TLIN14313-Q1
+  - Resistors: ?
+  - Diodes: ?
+  - Capacitors: ?
+- Wireless SoC
+  - SoC: Nordic Semiconductor nRF54L10
+  - Reset
+    - Resistor
+    - Capacitor
+  - Regulator
+    - Capacitors:
+    - Inductor
+    - Ferrite Bead
+  - Antenna
+    - Inductor:
+    - Capacitor:
+    - Inductor:
+    - Capacitor:
+    - Inductor:
+    - Capacitor:
+  - Resistors: ?
+  - Capacitors: ?
+  - Inductors: ?
+- Clock
+  - 32 MHz crystal:
+    - Crystal Load Capacitor:
+    - Crystal Load Capacitor:
+  - 32.768 kHz crystal:
+    - Crystal Load Capacitor:
+    - Crystal Load Capacitor:
+- Antenna
+  - 2.4GHz Loop Antenna: Abracon AANI-CH-0070 
+  - 5.1 pF Capacitor: Murata GJM1555C1H5R1WB01
+  - 2.2 nH Inductor: Murata LQW15AN2N2C10
+  - Capacitor: 
+- Connectors
+  - CN-REMO (Unit-facing)
+  - CN-REMO (Controller-facing)
 
 # Reference material
-- [LG HVAC Control Protocol](./reference/esphome-lg-controller/protocol.md)
 - [nRF54L10 Documentation](./reference/nRF54L15_nRF54L10_nRF54L05_Datasheet_v1.0.pdf)
+- [nRF54L10 Reference Layout](./reference/nRF54L15-QFAA%20Reference%20Layout%200_8)
 - [TLIN14313-Q1 Documentation](./reference/tlin1431-q1.pdf)
+- [AANI-CH-0070 Documentation](./reference/AANI-CH-0070.pdf)
+- [LG PREMTA000 User Guide](./reference/LG-PREMTA000-User-Guide.pdf)
+- [LG CN-REMO Protocol Research](./reference/esphome-lg-controller/protocol.md)
 
 # Environment
-- `uv` for executing Python scripts.
-- `cdp` for analyzing websites with Chrome DevTools Protocol (CDP).
-- `git` for fetching remote software repositories.
-- `curl` for fetching content over HTTP.
+- Use the `pdf` in your $PATH to split a large PDF into individual pages.
 - `.png`/`.jpeg`/`.gif`/`.webp` LLM perception enabled.
 - `.pdf` LLM perception enabled.
 - Unrestricted internet access enabled.
