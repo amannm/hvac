@@ -17,22 +17,39 @@
       - SPI control
       - Responder node
       - VQFN package
-    - Resistors: ?
-    - Capacitors: ?
-    - Diodes: ?
+    - Resistors:
+      - R_VSUP_REV (series diode, see Diodes) – optional 0Ω placeholder for layout variants
+      - R_nRST_PULLUP: 10 kΩ (RESET_N pull-up to 3V3)
+      - R_nINT_PULLUP: 10 kΩ (nINT pull-up to 3V3)
+      - R_PV_SER: 470 Ω (PV -> nRF ADC series / load)
+      - (Optional) R_SPI_SER: 22–47 Ω (x4: SCK/MOSI/MISO/CS, near nRF)
+      - (Optional) R_UART_SER: 22–47 Ω (x2: TXD/RXD, near nRF)
+    - Capacitors:
+      - C_VSUP: 100 nF (close to VSUP pin)
+      - C_VCC_BULK: 10 µF (close to VCC pin, ESR 0.001–2 Ω)
+      - C_VCC_HF: 100 nF (close to VCC pin)
+      - C_LIN: 220 pF (LIN to GND, responder-node EMI cap, close to TLIN)
+      - C_PV: 20 pF (PV to GND, close to TLIN)
+      - C_ADC: 10 nF (nRF AIN to GND, close to nRF)
+    - Diodes:
+      - D_VSUP_REV: Reverse-battery blocking diode in series with VSUP (Schottky or ideal-diode solution)
+      - (Optional) D_VSUP_TVS: TVS from VSUP-to-GND sized for the cable/transient environment
+      - (Optional) D_LIN_ESD: ESD/TVS clamp for LIN-to-GND if the signal wire is exposed/long
   - Wireless SoC
     - Chip: Nordic Semiconductor nRF54L10
       - QFN package
-    - Regulator Interface
-      - Capacitors: ?
-      - Inductors: ?
+    - Regulator Interface (per Nordic reference circuit family):
+      - Capacitors:
+        - 10 µF bulk on VDD rail (close to VDD entry)
+        - 2.2 µF decouplers as required by reference configuration
+        - 100 nF high-frequency decouplers
+        - 10 nF where shown in reference configuration
+      - Inductors:
+        - 4.7 µH (DC/DC inductor per reference configuration)
       - Ferrite Bead: 120 Ohm @ 100MHz, 200mA, 500 mOhm Max
-    - Antenna Interface
-      - Inductors: ?
-      - Capacitors: ?
-    - Reset Interface
-      - Resistor: ?
-      - Capacitor: ?
+    - Reset Interface:
+      - Resistor: 1 kΩ (series into NRESET per reference configuration)
+      - Capacitor: 2.2 nF (NRESET to GND per reference configuration)
   - Clock
     - 32 MHz crystal: XTAL SMD 2016, 32MHz, Cl=8pF, Tot: ±40ppm
       - Capacitors: ?

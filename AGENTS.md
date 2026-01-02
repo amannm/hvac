@@ -1,17 +1,17 @@
 # Project objectives
 
-- A hardware MITM between an existing LG HVAC unit wired to an LG controller unit.
+- A wireless controller for an existing LG HVAC unit wired to an existing LG controller unit.
     - Non-invasively installed inside the controller's plastic enclosure.
     - Reachable as a Thread-based, Matter-supported end device.
 
 # Reference material
 
 ## HVAC components
-- Unit Wiring: Page 28 [ARNU123NJA4 Installation Guide](reference/hvac/MFL65003108_00_210820_00_WEB_IM_English.pdf)
-- Controller Wiring: Page 77 (marked 152) [PREMTA000 User Guide](reference/hvac/LG-PREMTA000-User-Guide.pdf)
-- Controller Settings: Page 85 (marked 168) [PREMTA000 User Guide](reference/hvac/LG-PREMTA000-User-Guide.pdf)
+- Unit Wiring: Page 28 [ARNU123NJA4 Installation Guide](reference/hvac/MFL65003108_00_210820_00_WEB_IM_English/28.pdf)
+- Controller Wiring: Page 77 (marked 152) [PREMTA000 User Guide](reference/hvac/LG-PREMTA000-User-Guide/77.pdf)
+- Controller Settings: Page 85 (marked 168) [PREMTA000 User Guide](reference/hvac/LG-PREMTA000-User-Guide/85.pdf)
 - Control Protocol: [protocol.md](reference/hvac/esphome-lg-controller/protocol.md)
-- Group Control Wiring: Page 4 [PZCWRCG3 Cable Assembly Installation Guide ](reference/hvac/3828A20860M-IM.pdf)
+- Group Control Wiring: Page 4 [PZCWRCG3 Cable Assembly Installation Guide ](reference/hvac/3828A20860M-IM/4.pdf)
 
 ## Wireless control device
 - Transceiver: [TLIN14313-Q1](reference/device/tlin1431-q1.pdf)
