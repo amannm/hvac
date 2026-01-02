@@ -1,5 +1,4 @@
 # Project objectives
-
 - A wireless controller for an existing LG HVAC unit wired to an existing LG controller unit.
     - Non-invasively installed inside the controller's plastic enclosure.
     - Reachable as a Thread-based, Matter-supported end device.
@@ -16,16 +15,21 @@
 ## Wireless control device
 - Transceiver: [TLIN14313-Q1](reference/device/tlin1431-q1.pdf)
 - Wireless SoC: [nRF54L10](reference/device/nRF54L15_nRF54L10_nRF54L05_Datasheet_v1.0.pdf)
-    - [Reference Layout](./reference/device/nRF54L15-QFAA%20Reference%20Layout%200_8)
+    - [Reference Layout](reference/device/nRF54L15-QFAA%20Reference%20Layout%200_8)
 - Antenna: [AANI-CH-0070](reference/device/AANI-CH-0070.pdf)
+
+## Electronic design tools
+- [KiCad Documentation](reference/kicad-doc)
+- [KiCad Source Code](reference/kicad-doc)
 
 # Environment
 
 ## Utilities
-  - Before reading large PDF documents, use the `pdf` utility in your `$PATH` to split it into individual pages.
-  - For analyzing Excel documents, use `uv run --with openpyxl python -c "import openpyxl ..."`.
+- Before reading large PDF documents, use the `pdf` utility in your `$PATH` to split it into individual pages.
+- For analyzing Excel documents, use `uv run --with openpyxl python -c "import openpyxl ..."`.
+- For working with electronic design file formats, use the `kicad-cli` in your `$PATH`.
 
 ## Capabilities
-  - `.png`/`.jpeg`/`.gif`/`.webp` LLM perception enabled.
-  - `.pdf` LLM perception enabled.
-  - Unrestricted internet access enabled.
+- `.png`/`.jpeg`/`.gif`/`.webp` LLM perception enabled.
+- `.pdf` LLM perception enabled.
+- Unrestricted internet access enabled.
