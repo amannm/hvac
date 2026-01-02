@@ -21,6 +21,7 @@
 ## Electronic design tools
 - [KiCad Documentation](reference/kicad-doc)
 - [KiCad Source Code](reference/kicad)
+- [Freerouting Source Code](reference/freerouting)
 
 # Environment
 
@@ -28,6 +29,7 @@
 - Before reading large PDF documents, use the `pdf` utility in your `$PATH` to split it into individual pages.
 - For analyzing Excel documents, use `uv run --with openpyxl python -c "import openpyxl ..."`.
 - For working with electronic design files, use the `kicad-cli` in your `$PATH`.
+- For working with PCB auto-routing `.dsn` (Specctra) files, use the `freerouting-cli` CLI in your `$PATH`.
 
 ## Capabilities
 - `.png`/`.jpeg`/`.gif`/`.webp` LLM perception enabled.
