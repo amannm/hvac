@@ -27,7 +27,7 @@
 ## Utilities
 - Before reading large PDF documents, use the `pdf` utility in your `$PATH` to split it into individual pages.
 - For analyzing Excel documents, use `uv run --with openpyxl python -c "import openpyxl ..."`.
-- For working with electronic design file formats, use the `kicad-cli` in your `$PATH`.
+- For working with electronic design files, use the `kicad-cli` in your `$PATH`.
 
 ## Capabilities
 - `.png`/`.jpeg`/`.gif`/`.webp` LLM perception enabled.
