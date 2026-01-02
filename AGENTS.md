@@ -20,7 +20,7 @@
 
 ## Electronic design tools
 - [KiCad Documentation](reference/kicad-doc)
-- [KiCad Source Code](reference/kicad-doc)
+- [KiCad Source Code](reference/kicad)
 
 # Environment
 
