@@ -1,9 +1,9 @@
 # Components
-- HVAC Unit
+- HVAC Unit (installed)
   - LG ARNU123NJA4 
-- HVAC Controller
+- HVAC Controller (installed)
   - LG PREMTA000
-- Device
+- Wireless Controller Device PCB
   - PCB
     - 0.115mm Copper
     - 0.508mm FR-4
