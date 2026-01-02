@@ -13,15 +13,15 @@
 - Group Control Wiring: Page 4 [PZCWRCG3 Cable Assembly Installation Guide ](reference/hvac/3828A20860M-IM/4.pdf)
 
 ## Wireless control device
-- Transceiver: [TLIN14313-Q1](reference/device/tlin1431-q1.pdf)
-- Wireless SoC: [nRF54L10](reference/device/nRF54L15_nRF54L10_nRF54L05_Datasheet_v1.0.pdf)
+- Transceiver: [TLIN14313-Q1](reference/device/tlin1431-q1)
+- Wireless SoC: [nRF54L10](reference/device/nRF54L15_nRF54L10_nRF54L05_Datasheet_v1.0)
     - [Reference Layout](reference/device/nRF54L15-QFAA%20Reference%20Layout%200_8)
-- Antenna: [AANI-CH-0070](reference/device/AANI-CH-0070.pdf)
+- Antenna: [AANI-CH-0070](reference/device/AANI-CH-0070)
 
-## Electronic design tools
-- [KiCad Documentation](reference/kicad-doc)
-- [KiCad Source Code](reference/kicad)
-- [Freerouting Source Code](reference/freerouting)
+## Electronic design automation tools
+- [KiCad Documentation](reference/eda/kicad-doc)
+- [KiCad Source Code](reference/eda/kicad)
+- [Freerouting Source Code](reference/eda/freerouting)
 
 # Environment
 
