@@ -19,7 +19,8 @@
 - Antenna: [AANI-CH-0070](reference/device/AANI-CH-0070)
 
 ## Electronic design automation tools
-- [KiCad Documentation](reference/eda/kicad-doc)
+- [KiCad Developer Documentation](reference/eda/kicad-dev-docs)
+- [KiCad User Documentation](reference/eda/kicad-doc)
 - [KiCad Source Code](reference/eda/kicad)
 - [Freerouting Source Code](reference/eda/freerouting)
 
