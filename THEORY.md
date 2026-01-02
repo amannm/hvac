@@ -145,18 +145,16 @@ Got it — if you want **Thread/Matter**, the “optimal” design is still *par
 
 Matter-over-Thread devices don’t speak Wi-Fi directly; they need a border router on the network. Your embedded device does *not* need to be that border router.
 
-## 2) Silicon choice: nRF54L10 will work, but nRF54L15 is the safer “Matter-first” pick
+## 2) Silicon choice: use nRF54L10 (selected)
 
 From the nRF54L datasheet:
 
-* **nRF54L10**: **1012 KB NVM**, **192 KB RAM** 
-* **nRF54L15**: **1524 KB NVM**, **256 KB RAM** 
+* **nRF54L10**: **1012 KB NVM**, **192 KB RAM** (selected) 
+* **nRF54L15**: **1524 KB NVM**, **256 KB RAM** (not selected; fallback if L10 headroom proves tight) 
 * Radio supports **802.15.4-2020** and explicitly notes “Enables Matter, Thread.” 
 * Security features include TrustZone isolation + crypto engine with side-channel leakage protection. 
 
-**Why I’d steer “optimal” toward nRF54L15:** Matter + Thread + a decent attribute model + logging + OTA headroom is where RAM/flash get tight fast. If your mechanical envelope and BOM can tolerate it, L15 is the less painful path.
-
-If you must stay with **L10**, I’d plan early for:
+Because we are using **L10**, plan early for:
 
 * aggressive logging limits
 * careful feature selection in the Matter stack
@@ -282,7 +280,7 @@ Even though you’re embedding inside the master controller enclosure (so you *d
 
 ---
 
-If you want, I can propose an exact “first Matter device definition” (endpoint list + clusters + which LG fields map to which attributes) based on the message types you’ve decoded so far, and a concrete strategy for OTA given **nRF54L10 vs nRF54L15** memory limits.
+If you want, I can propose an exact “first Matter device definition” (endpoint list + clusters + which LG fields map to which attributes) based on the message types you’ve decoded so far, and a concrete strategy for OTA given **nRF54L10** memory limits.
 
 ---
 
@@ -655,7 +653,7 @@ Think of TLIN14313 as **the rugged front-end + power + supervisor**, and the nRF
 2. **TLIN VCC (3.3 V) → nRF54 VDD (shared 3.3 V rail)**
 
 * TLIN14313 is the **fixed 3.3 V LDO variant**. 
-* nRF54L10/L15 runs from **VDD = 1.7 V to 3.6 V**, so 3.3 V from TLIN is directly compatible. 
+* nRF54L10 runs from **VDD = 1.7 V to 3.6 V**, so 3.3 V from TLIN is directly compatible. 
 * TI calls out **C(VCC)=10 µF** with **ESR between 0.001 Ω and 2 Ω**. 
 * Nordic’s reference circuit shows a local **10 µF bulk** plus multiple small decouplers on the nRF supply network. 
 

@@ -31,6 +31,8 @@
       - C_LIN: 220 pF (LIN to GND, responder-node EMI cap, close to TLIN)
       - C_PV: 20 pF (PV to GND, close to TLIN)
       - C_ADC: 10 nF (nRF AIN to GND, close to nRF)
+    - Control:
+      - DIV_ON (Pin 11): nRF GPIO-controlled (enable only during PV sampling)
     - Diodes:
       - D_VSUP_REV: Reverse-battery blocking diode in series with VSUP (Schottky or ideal-diode solution)
       - (Optional) D_VSUP_TVS: TVS from VSUP-to-GND sized for the cable/transient environment

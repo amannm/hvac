@@ -23,6 +23,9 @@
 - [KiCad Source Code](reference/eda/kicad)
 - [Freerouting Source Code](reference/eda/freerouting)
 
+## Software stack
+- [Matter 1.5 Specification](reference/matter)
+
 # Environment
 
 ## Utilities
