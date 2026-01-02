@@ -37,7 +37,7 @@
       - (Optional) D_LIN_ESD: ESD/TVS clamp for LIN-to-GND if the signal wire is exposed/long
   - Wireless SoC
     - Chip: Nordic Semiconductor nRF54L10
-      - QFN package
+      - 5x5 mm QFN40 package
     - Regulator Interface (per Nordic reference circuit family):
       - Capacitors:
         - 10 µF bulk on VDD rail (close to VDD entry)
