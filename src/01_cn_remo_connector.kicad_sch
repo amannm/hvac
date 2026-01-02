@@ -2099,6 +2099,54 @@
 		(uuid "91ffaf84-2647-48e0-a602-821724925a52")
 	)
 
+	(hierarchical_label "VBUS_12V_RAW"
+		(shape passive)
+		(at 20 50 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a1b2c3d4-e5f6-7890-abcd-ef1234567801")
+	)
+	(hierarchical_label "VSUP_PROT"
+		(shape passive)
+		(at 20 54 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a1b2c3d4-e5f6-7890-abcd-ef1234567802")
+	)
+	(hierarchical_label "BUS_SIG_RAW"
+		(shape passive)
+		(at 20 58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a1b2c3d4-e5f6-7890-abcd-ef1234567803")
+	)
+	(hierarchical_label "GND"
+		(shape passive)
+		(at 20 62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a1b2c3d4-e5f6-7890-abcd-ef1234567804")
+	)
 
 	(sheet_instances
 		(path "/"

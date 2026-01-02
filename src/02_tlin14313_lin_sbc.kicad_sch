@@ -3068,6 +3068,198 @@
 		(uuid "7cd9c03f-321a-4f63-afe0-0439386ef45c")
 	)
 
+	(hierarchical_label "VBUS_12V_RAW"
+		(shape passive)
+		(at 20 50 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b1c2d3e4-f5a6-7890-bcde-f12345678901")
+	)
+	(hierarchical_label "VSUP_PROT"
+		(shape passive)
+		(at 20 54 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b1c2d3e4-f5a6-7890-bcde-f12345678902")
+	)
+	(hierarchical_label "BUS_SIG_RAW"
+		(shape passive)
+		(at 20 58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b1c2d3e4-f5a6-7890-bcde-f12345678903")
+	)
+	(hierarchical_label "GND"
+		(shape passive)
+		(at 20 62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b1c2d3e4-f5a6-7890-bcde-f12345678904")
+	)
+	(hierarchical_label "VCC_3V3"
+		(shape passive)
+		(at 190 50 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b1c2d3e4-f5a6-7890-bcde-f12345678905")
+	)
+	(hierarchical_label "LIN_BUS"
+		(shape passive)
+		(at 190 54 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b1c2d3e4-f5a6-7890-bcde-f12345678906")
+	)
+	(hierarchical_label "SPI_CS"
+		(shape passive)
+		(at 190 58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b1c2d3e4-f5a6-7890-bcde-f12345678907")
+	)
+	(hierarchical_label "SPI_SCK"
+		(shape passive)
+		(at 190 62 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b1c2d3e4-f5a6-7890-bcde-f12345678908")
+	)
+	(hierarchical_label "SPI_MOSI"
+		(shape passive)
+		(at 190 66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b1c2d3e4-f5a6-7890-bcde-f12345678909")
+	)
+	(hierarchical_label "SPI_MISO"
+		(shape passive)
+		(at 190 70 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b1c2d3e4-f5a6-7890-bcde-f12345678910")
+	)
+	(hierarchical_label "UART_TX"
+		(shape passive)
+		(at 190 74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b1c2d3e4-f5a6-7890-bcde-f12345678911")
+	)
+	(hierarchical_label "UART_RX"
+		(shape passive)
+		(at 190 78 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b1c2d3e4-f5a6-7890-bcde-f12345678912")
+	)
+	(hierarchical_label "TLIN_nINT"
+		(shape passive)
+		(at 190 82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b1c2d3e4-f5a6-7890-bcde-f12345678913")
+	)
+	(hierarchical_label "TLIN_nRST"
+		(shape passive)
+		(at 190 86 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b1c2d3e4-f5a6-7890-bcde-f12345678914")
+	)
+	(hierarchical_label "PV_SENSE"
+		(shape passive)
+		(at 190 90 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b1c2d3e4-f5a6-7890-bcde-f12345678915")
+	)
+	(hierarchical_label "TLIN_DIV_ON"
+		(shape passive)
+		(at 190 94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b1c2d3e4-f5a6-7890-bcde-f12345678916")
+	)
 
 	(sheet_instances
 		(path "/"

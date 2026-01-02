@@ -2329,6 +2329,114 @@
 		(uuid "126503ec-d17c-4698-a2ba-8c33ea1bbe80")
 	)
 
+	(hierarchical_label "VBUS_12V_RAW"
+		(shape passive)
+		(at 20 174 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e1f2a3b4-c5d6-7890-efab-012345678901")
+	)
+	(hierarchical_label "VSUP_PROT"
+		(shape passive)
+		(at 20 178 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e1f2a3b4-c5d6-7890-efab-012345678902")
+	)
+	(hierarchical_label "VCC_3V3"
+		(shape passive)
+		(at 20 182 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e1f2a3b4-c5d6-7890-efab-012345678903")
+	)
+	(hierarchical_label "GND"
+		(shape passive)
+		(at 20 186 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e1f2a3b4-c5d6-7890-efab-012345678904")
+	)
+	(hierarchical_label "LIN_BUS"
+		(shape passive)
+		(at 20 190 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e1f2a3b4-c5d6-7890-efab-012345678905")
+	)
+	(hierarchical_label "nRF_RESET"
+		(shape passive)
+		(at 20 194 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e1f2a3b4-c5d6-7890-efab-012345678906")
+	)
+	(hierarchical_label "SWDIO"
+		(shape passive)
+		(at 20 198 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e1f2a3b4-c5d6-7890-efab-012345678907")
+	)
+	(hierarchical_label "SWDCLK"
+		(shape passive)
+		(at 20 202 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e1f2a3b4-c5d6-7890-efab-012345678908")
+	)
+	(hierarchical_label "VDD_nRF"
+		(shape passive)
+		(at 20 206 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e1f2a3b4-c5d6-7890-efab-012345678909")
+	)
 
 	(sheet_instances
 		(path "/"

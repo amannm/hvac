@@ -3658,6 +3658,210 @@
 		(uuid "63a32128-3cda-41e1-9ba8-cc090c8d42a1")
 	)
 
+	(hierarchical_label "VCC_3V3"
+		(shape passive)
+		(at 20 137 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c1d2e3f4-a5b6-7890-cdef-012345678901")
+	)
+	(hierarchical_label "GND"
+		(shape passive)
+		(at 20 140 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c1d2e3f4-a5b6-7890-cdef-012345678902")
+	)
+	(hierarchical_label "TLIN_DIV_ON"
+		(shape passive)
+		(at 190 105 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1d2e3f4-a5b6-7890-cdef-012345678903")
+	)
+	(hierarchical_label "SPI_CS"
+		(shape passive)
+		(at 190 108 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1d2e3f4-a5b6-7890-cdef-012345678904")
+	)
+	(hierarchical_label "SPI_SCK"
+		(shape passive)
+		(at 190 111 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1d2e3f4-a5b6-7890-cdef-012345678905")
+	)
+	(hierarchical_label "SPI_MOSI"
+		(shape passive)
+		(at 190 114 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1d2e3f4-a5b6-7890-cdef-012345678906")
+	)
+	(hierarchical_label "SPI_MISO"
+		(shape passive)
+		(at 190 117 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1d2e3f4-a5b6-7890-cdef-012345678907")
+	)
+	(hierarchical_label "UART_TX"
+		(shape passive)
+		(at 190 120 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1d2e3f4-a5b6-7890-cdef-012345678908")
+	)
+	(hierarchical_label "UART_RX"
+		(shape passive)
+		(at 190 123 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1d2e3f4-a5b6-7890-cdef-012345678909")
+	)
+	(hierarchical_label "TLIN_nINT"
+		(shape passive)
+		(at 190 126 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1d2e3f4-a5b6-7890-cdef-012345678910")
+	)
+	(hierarchical_label "TLIN_nRST"
+		(shape passive)
+		(at 190 129 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1d2e3f4-a5b6-7890-cdef-012345678911")
+	)
+	(hierarchical_label "PV_SENSE"
+		(shape passive)
+		(at 190 132 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1d2e3f4-a5b6-7890-cdef-012345678912")
+	)
+	(hierarchical_label "RF_ANT"
+		(shape passive)
+		(at 190 135 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1d2e3f4-a5b6-7890-cdef-012345678913")
+	)
+	(hierarchical_label "SWDIO"
+		(shape passive)
+		(at 190 138 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1d2e3f4-a5b6-7890-cdef-012345678914")
+	)
+	(hierarchical_label "SWDCLK"
+		(shape passive)
+		(at 190 141 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1d2e3f4-a5b6-7890-cdef-012345678915")
+	)
+	(hierarchical_label "nRF_RESET"
+		(shape passive)
+		(at 190 144 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1d2e3f4-a5b6-7890-cdef-012345678916")
+	)
+	(hierarchical_label "VDD_nRF"
+		(shape passive)
+		(at 190 147 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1d2e3f4-a5b6-7890-cdef-012345678917")
+	)
 
 	(sheet_instances
 		(path "/"

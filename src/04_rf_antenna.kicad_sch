@@ -2361,6 +2361,30 @@
 		(uuid "dc24e281-3697-43b3-b198-dbd5e824dc24")
 	)
 
+	(hierarchical_label "RF_ANT"
+		(shape passive)
+		(at 20 150 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d1e2f3a4-b5c6-7890-defa-012345678901")
+	)
+	(hierarchical_label "GND"
+		(shape passive)
+		(at 20 154 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d1e2f3a4-b5c6-7890-defa-012345678902")
+	)
 
 	(sheet_instances
 		(path "/"
