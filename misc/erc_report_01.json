@@ -1,0 +1,255 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-01-03T02:56:17-0600",
+    "kicad_version": "9.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/83e80246-6c34-4754-8890-989901f0dcda",
+            "violations": [
+                {
+                    "description": "Hierarchical label \"VBUS_12V_RAW\" in root sheet cannot be connected to non-existent parent sheet",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'VBUS_12V_RAW'",
+                            "pos": {
+                                "x": 0.2,
+                                "y": 0.5
+                            },
+                            "uuid": "ef1f72d8-bf93-4115-8924-52feef24550e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Label not connected to anything",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'VSUP_PROT'",
+                            "pos": {
+                                "x": 0.2,
+                                "y": 0.54
+                            },
+                            "uuid": "605f934b-1b70-453d-b141-b84a77ba91ff"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Hierarchical label \"VSUP_PROT\" in root sheet cannot be connected to non-existent parent sheet",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'VSUP_PROT'",
+                            "pos": {
+                                "x": 0.2,
+                                "y": 0.54
+                            },
+                            "uuid": "605f934b-1b70-453d-b141-b84a77ba91ff"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Label not connected to anything",
+                    "items": [
+                        {
+                            "description": "Label 'VSUP_PROT'",
+                            "pos": {
+                                "x": 0.2254,
+                                "y": 0.54
+                            },
+                            "uuid": "6387d95b-f0d5-4697-9be0-d46e8c5dc715"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Hierarchical label \"BUS_SIG_RAW\" in root sheet cannot be connected to non-existent parent sheet",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'BUS_SIG_RAW'",
+                            "pos": {
+                                "x": 0.2,
+                                "y": 0.58
+                            },
+                            "uuid": "c4a4f132-a82b-4a99-8753-72caf9e53945"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Hierarchical label \"GND\" in root sheet cannot be connected to non-existent parent sheet",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'GND'",
+                            "pos": {
+                                "x": 0.2,
+                                "y": 0.62
+                            },
+                            "uuid": "ea4874d1-385a-45fc-8ed7-ae007ebe56c1"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Label not connected to anything",
+                    "items": [
+                        {
+                            "description": "Label 'VSUP_PROT'",
+                            "pos": {
+                                "x": 1.0381,
+                                "y": 0.5
+                            },
+                            "uuid": "eee8ddb7-b760-412c-872e-0dd2c5f2999e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Horizontal Wire, length 0.0254 mm",
+                            "pos": {
+                                "x": 0.2,
+                                "y": 0.5
+                            },
+                            "uuid": "58bb99d1-97e7-49d1-a4d6-3edaf4386c7f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Horizontal Wire, length 0.0254 mm",
+                            "pos": {
+                                "x": 0.2,
+                                "y": 0.54
+                            },
+                            "uuid": "356c533a-3e7e-4b3a-971d-8700bc8eb5e4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Horizontal Wire, length 0.0254 mm",
+                            "pos": {
+                                "x": 0.2,
+                                "y": 0.58
+                            },
+                            "uuid": "f84ea0bf-caae-43cc-b686-45260039a646"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Horizontal Wire, length 0.0254 mm",
+                            "pos": {
+                                "x": 0.2,
+                                "y": 0.62
+                            },
+                            "uuid": "0c5cb1e0-37d9-40e1-b087-c0fc0e73fae9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol J1 Pin 1 [Pin_1, Passive, Line]",
+                            "pos": {
+                                "x": 0.5492,
+                                "y": 0.5746
+                            },
+                            "uuid": "bf853149-b744-4f97-87f3-bb25a609dba5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol D1 Pin 1 [K, Passive, Line]",
+                            "pos": {
+                                "x": 0.9619,
+                                "y": 0.5
+                            },
+                            "uuid": "01a88832-bf99-472f-b10e-55cc4697a4d8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol D2 Pin 1 [K, Passive, Line]",
+                            "pos": {
+                                "x": 0.9619,
+                                "y": 0.62
+                            },
+                            "uuid": "66b59dec-e2d7-466e-9f26-5d054debc8ab"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol D3 Pin 1 [K, Passive, Line]",
+                            "pos": {
+                                "x": 0.9619,
+                                "y": 0.74
+                            },
+                            "uuid": "2a0ef4c1-82a0-4063-8625-08c3f73b6b88"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol C1 Pin 1 [Passive, Line]",
+                            "pos": {
+                                "x": 1.0,
+                                "y": 0.8219
+                            },
+                            "uuid": "2734dd80-15c8-466c-af6c-3d89fb4c0777"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                }
+            ]
+        }
+    ],
+    "source": "01_cn_remo_connector.kicad_sch"
+}
