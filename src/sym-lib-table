@@ -1,4 +1,6 @@
 (sym_lib_table
-  (lib (name "Device") (type "KiCad") (uri "/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols/Device.kicad_sym") (options "") (descr "Device symbols"))
-  (lib (name "Connector_Generic") (type "KiCad") (uri "/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols/Connector_Generic.kicad_sym") (options "") (descr "Generic connectors"))
+  (version 7)
+  (lib (name "Device")(type "KiCad")(uri "/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols/Device.kicad_sym")(options "")(descr "Device symbols"))
+  (lib (name "Connector_Generic")(type "KiCad")(uri "/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols/Connector_Generic.kicad_sym")(options "")(descr "Generic connectors"))
+  (lib (name "HVAC")(type "KiCad")(uri "${KIPRJMOD}/hvac.kicad_sym")(options "")(descr ""))
 )
