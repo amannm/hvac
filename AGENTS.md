@@ -13,10 +13,9 @@
 - Group Control Wiring: Page 4 [PZCWRCG3 Cable Assembly Installation Guide ](reference/hvac/3828A20860M-IM/4.pdf)
 
 ## Wireless control device
-- Transceiver: [TLIN14313-Q1](reference/device/tlin1431-q1)
-- Wireless SoC: [nRF54L10](reference/device/nRF54L15_nRF54L10_nRF54L05_Datasheet_v1.0)
-    - [Reference Layout](reference/device/nRF54L15-QFAA%20Reference%20Layout%200_8)
-- Antenna: [AANI-CH-0070](reference/device/AANI-CH-0070)
+- Transceiver: [TLIN14313-Q1](datasheets/tlin1431-q1)
+- Wireless SoC: [nRF54L10](datasheets/nRF54L15_nRF54L10_nRF54L05_Datasheet_v1.0)
+- Antenna: [AANI-CH-0070](datasheets/AANI-CH-0070)
 
 ## Electronic design automation tools
 - [KiCad Developer Documentation](reference/eda/kicad-dev-docs)
@@ -34,7 +33,7 @@
 - For analyzing Excel documents, use `uv run --with openpyxl python -c "import openpyxl ..."`.
 - For working with electronic design files, use the `kicad-cli` in your `$PATH`.
 - For working with PCB auto-routing `.dsn` (Specctra) files, use the `freerouting-cli` CLI in your `$PATH`.
-- Use the `kicad_sch_api` Python library to manipulate
+- Use the `kicad_sch_api` Python library to manipulate schematic files.
 
 ## Capabilities
 - `.png`/`.jpeg`/`.gif`/`.webp` LLM perception enabled.
@@ -42,6 +41,11 @@
 - Unrestricted internet access enabled.
 
 # Techniques
+
+## Extracting component information from datasheets
+1. Symbol: .kicad_sym (or imported foreign library symbol)
+2. Footprint: .kicad_mod (inside a library folder)
+3. Metadata row: SQLite (+ .kicad_dbl mapping) for MPN, manufacturer, key electrical params, package, footprint name, datasheet path, supplier SKUs, etc. ￼
 
 ## Developing KiCad schematic files
 1. Parse/edit schematics with the `kicad-sch-api` Python library.
