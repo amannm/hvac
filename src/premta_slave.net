@@ -1,0 +1,708 @@
+<?xml version='1.0' encoding='utf-8'?>
+<export version="D">
+  <design>
+    <source>premta_slave.sch</source>
+    <date>2026-01-03 08:13:49 UTC</date>
+    <tool>chatgpt-netlist-generator</tool>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>TLIN14313-Q1</value>
+      <footprint>Package_DFN_QFN:VQFN-20-1EP_4.5x3.5mm_P0.5mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tlin1431-q1.pdf</datasheet>
+      <libsource lib="device" part="TLIN14313-Q1" description="TI TLIN14313-Q1 LIN transceiver with integrated 3.3V LDO, SPI/UART" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>24B302F5</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>nRF54L10-QDAA</value>
+      <footprint>Package_DFN_QFN:QFN-40-1EP_5x5mm_P0.4mm</footprint>
+      <datasheet>https://docs.nordicsemi.com/bundle/ps_nrf54L10/page/chapters/pin_assign.html</datasheet>
+      <libsource lib="device" part="nRF54L10-QDAA" description="Nordic Semiconductor nRF54L10 SoC (QFN40 QDAA) Thread/Matter/BLE" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>0692FD4B</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>CN-REMO_3W</value>
+      <footprint />
+      <datasheet />
+      <libsource lib="device" part="CN-REMO_3W" description="LG CN-REMO 3-wire bus connector (Red=12V, Yellow=SIG, Black=GND)" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>88806623</tstamp>
+    </comp>
+    <comp ref="AE1">
+      <value>AANI-CH-0070</value>
+      <footprint>RF_Antenna:Abracon_AANI-CH-0070</footprint>
+      <datasheet>https://abracon.com/datasheets/AANI-CH-0070.pdf</datasheet>
+      <libsource lib="device" part="AANI-CH-0070" description="Abracon 2.4GHz loop chip antenna 1.0x0.5x0.4mm" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>26D44588</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>D_VSUP_REV</value>
+      <footprint>Diode_SMD:D_SMA</footprint>
+      <datasheet />
+      <libsource lib="Device" part="D_Schottky" description="Reverse blocking diode (Schottky or ideal diode)" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>CC9A0D84</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>D_VSUP_TVS (DNP)</value>
+      <footprint>Diode_SMD:D_SMB</footprint>
+      <datasheet />
+      <libsource lib="Device" part="D_TVS" description="Optional TVS on 12V rail" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>4A80BAAD</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>D_LIN_ESD (DNP)</value>
+      <footprint>Diode_SMD:D_SOD-523</footprint>
+      <datasheet />
+      <libsource lib="Device" part="D_TVS" description="Optional ESD/TVS clamp for bus signal" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>D4153F68</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>C_VBUS_BULK 22uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="C" description="Entry bulk capacitance" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>28C27031</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>C_VSUP 100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="C" description="TLIN VSUP decoupling" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>CB7D29F4</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>C_VCC_BULK 10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="C" description="TLIN VCC bulk decoupling" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>0371438F</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>C_VCC_HF 100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="C" description="TLIN VCC HF decoupling" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>AAA025B3</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>R_LIN_SER 1k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="R" description="Series resistor between bus and TLIN LIN" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>95CED8B1</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>C_LIN 220pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="C" description="EMI capacitor on LIN_BUS" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>FBEFF728</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>R_nCS_PULLUP 10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="R" description="Pull-up on SPI_CS" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>C857F421</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>R_nRST_PULLUP 10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="R" description="Pull-up on TLIN_nRST" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>09FFCE44</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>R_nINT_PULLUP 10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="R" description="Pull-up on TLIN_nINT" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>92717979</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>R_PV_SER 470</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="R" description="PV series resistor" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>B3054037</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>C_PV 20pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="C" description="PV conditioning capacitor" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>742FBE77</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>C_ADC 10nF (DNP)</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="C" description="Optional ADC RC capacitor" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>A838E585</tstamp>
+    </comp>
+    <comp ref="FB1">
+      <value>FB1 120ohm@100MHz</value>
+      <footprint>Ferrite_Bead_SMD:Ferrite_Bead_0603_1608Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="Ferrite_Bead" description="Ferrite bead from VCC_3V3 to VDD_nRF" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>7B6B40FB</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>C_VDD_BULK 10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="C" description="nRF bulk decoupling" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>F9570312</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>C_VDD 2.2uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="C" description="nRF decoupling" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>B31F0373</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>C_VDD_HF 100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="C" description="nRF HF decoupling" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>BE3CC231</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>L_DCDC 4.7uH</value>
+      <footprint>Inductor_SMD:L_0603_1608Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="L" description="DC/DC inductor from DCC to VDD_nRF" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>52B1773E</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>C_DECD 10nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="C" description="DECD capacitor" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>F1566706</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>C_DECA 100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="C" description="DECA/DECRF capacitor" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>29A3146B</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>R_RESET_SER 1k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="R" description="Series resistor into nRF reset" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>69590B19</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>C_RESET 2.2nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="C" description="Reset capacitor" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>E9BBF43F</tstamp>
+    </comp>
+    <comp ref="Y1">
+      <value>32MHz</value>
+      <footprint>Crystal:Crystal_SMD_2016-2Pin_2.0x1.6mm</footprint>
+      <datasheet />
+      <libsource lib="Device" part="Crystal" description="32 MHz crystal" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>2FF12FB9</tstamp>
+    </comp>
+    <comp ref="Y2">
+      <value>32.768kHz</value>
+      <footprint>Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm</footprint>
+      <datasheet />
+      <libsource lib="Device" part="Crystal" description="32.768 kHz crystal" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>0B94EE47</tstamp>
+    </comp>
+    <comp ref="L2">
+      <value>X3 2.2nH</value>
+      <footprint>Inductor_SMD:L_0402_1005Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="L" description="Antenna matching shunt inductor (Abracon X3)" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>A58B12BF</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>X2 5.1pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="C" description="Antenna matching series capacitor (Abracon X2)" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>86A5E270</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>X1 DNP</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+      <libsource lib="Device" part="C" description="Antenna matching shunt (Abracon X1, not mounted)" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>2C383EE3</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>SWDIO</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet />
+      <libsource lib="TestPoint" part="TestPoint" description="SWDIO test pad" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>1AECCB40</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value>SWDCLK</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet />
+      <libsource lib="TestPoint" part="TestPoint" description="SWDCLK test pad" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>3295FAE1</tstamp>
+    </comp>
+    <comp ref="TP3">
+      <value>nRF_RESET</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet />
+      <libsource lib="TestPoint" part="TestPoint" description="Reset test pad" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>5E6EF2E2</tstamp>
+    </comp>
+    <comp ref="TP4">
+      <value>VREF (VDD_nRF)</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet />
+      <libsource lib="TestPoint" part="TestPoint" description="Vref test pad for SWD" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>309D4418</tstamp>
+    </comp>
+    <comp ref="TP5">
+      <value>GND</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet />
+      <libsource lib="TestPoint" part="TestPoint" description="GND test pad" />
+      <sheetpath names="/" tstamps="/" />
+      <tstamp>4A24D549</tstamp>
+    </comp>
+    <comp ref="L3">
+      <value>L_RF1 2.7nH</value>
+      <footprint>Inductor_SMD:L_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="C16">
+      <value>C_RF1 1.5pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="L4">
+      <value>L_RF2 3.5nH</value>
+      <footprint>Inductor_SMD:L_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="C17">
+      <value>C_RF2 2.0pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="L5">
+      <value>L_RF3 3.5nH</value>
+      <footprint>Inductor_SMD:L_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="C18">
+      <value>C_RF3 0.3pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="C19">
+      <value>C_RF4 3.9pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="R7">
+      <value>R_SPI_SCK 33R (DNP)</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="R8">
+      <value>R_SPI_MOSI 33R (DNP)</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="R9">
+      <value>R_SPI_MISO 33R (DNP)</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="R10">
+      <value>R_SPI_CS 33R (DNP)</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="R11">
+      <value>R_UART_TX 33R (DNP)</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="R12">
+      <value>R_UART_RX 33R (DNP)</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="R13">
+      <value>R_VSUP_BYP 0R (DNP)</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="C20">
+      <value>C_VDD_10nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="C21">
+      <value>C_VDD_HF2 100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="C22">
+      <value>C_VDD_HF3 100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="C23">
+      <value>C_XC1_LOAD (DNP)</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="C24">
+      <value>C_XC2_LOAD (DNP)</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="C25">
+      <value>C_XL1_LOAD (DNP)</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="C26">
+      <value>C_XL2_LOAD (DNP)</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="TP6">
+      <value>VBUS_12V_RAW</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="TP7">
+      <value>VSUP_PROT</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="TP8">
+      <value>VCC_3V3</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="TP9">
+      <value>VDD_nRF</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="TP10">
+      <value>BUS_SIG_RAW</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="TP11">
+      <value>LIN_BUS</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet />
+    </comp>
+    <comp ref="TP12">
+      <value>RF_50 (DNP)</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet />
+    </comp>
+  <comp ref="C27"><value>C_VDD2 2.2uF</value><footprint>Capacitor_SMD:C_0402_1005Metric</footprint><datasheet /><libsource lib="Device" part="C" description="nRF decoupling (extra)" /><sheetpath names="/" tstamps="/" /><tstamp>C37A4FBE</tstamp></comp>
+    <comp ref="C28"><value>C_VDD_HF4 100nF</value><footprint>Capacitor_SMD:C_0402_1005Metric</footprint><datasheet /><libsource lib="Device" part="C" description="nRF HF decoupling (extra)" /><sheetpath names="/" tstamps="/" /><tstamp>7FF8CF6E</tstamp></comp>
+    </components>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="J1" pin="3" />
+      <node ref="U1" pin="14" />
+      <node ref="U1" pin="21" />
+      <node ref="U2" pin="27" />
+      <node ref="U2" pin="37" />
+      <node ref="U2" pin="41" />
+      <node ref="AE1" pin="2" />
+      <node ref="AE1" pin="3" />
+      <node ref="TP5" pin="1" />
+      <node ref="D2" pin="2" />
+      <node ref="D3" pin="2" />
+      <node ref="C1" pin="2" />
+      <node ref="C2" pin="2" />
+      <node ref="C3" pin="2" />
+      <node ref="C4" pin="2" />
+      <node ref="C5" pin="2" />
+      <node ref="C6" pin="2" />
+      <node ref="C7" pin="2" />
+      <node ref="C8" pin="2" />
+      <node ref="C9" pin="2" />
+      <node ref="C10" pin="2" />
+      <node ref="C11" pin="2" />
+      <node ref="C12" pin="2" />
+      <node ref="C13" pin="2" />
+      <node ref="L2" pin="2" />
+      <node ref="C15" pin="2" />
+      <node ref="C20" pin="2" />
+      <node ref="C21" pin="2" />
+      <node ref="C22" pin="2" />
+      <node ref="C23" pin="2" />
+      <node ref="C24" pin="2" />
+      <node ref="C25" pin="2" />
+      <node ref="C26" pin="2" />
+      <node ref="C16" pin="2" />
+      <node ref="C17" pin="2" />
+      <node ref="C18" pin="2" />
+    <node ref="C27" pin="2" />
+      <node ref="C28" pin="2" />
+      </net>
+    <net code="2" name="ANT_FEED">
+      <node ref="C14" pin="2" />
+      <node ref="C15" pin="1" />
+      <node ref="AE1" pin="1" />
+      <node ref="AE1" pin="4" />
+    </net>
+    <net code="3" name="BUS_SIG_RAW">
+      <node ref="J1" pin="2" />
+      <node ref="R1" pin="1" />
+      <node ref="D3" pin="1" />
+      <node ref="TP10" pin="1" />
+    </net>
+    <net code="4" name="DCC">
+      <node ref="U2" pin="39" />
+      <node ref="L1" pin="1" />
+    </net>
+    <net code="5" name="DECA">
+      <node ref="U2" pin="28" />
+      <node ref="U2" pin="36" />
+      <node ref="C12" pin="1" />
+    </net>
+    <net code="6" name="DECD">
+      <node ref="U2" pin="38" />
+      <node ref="C11" pin="1" />
+    </net>
+    <net code="7" name="LIN_BUS">
+      <node ref="R1" pin="2" />
+      <node ref="U1" pin="15" />
+      <node ref="C5" pin="1" />
+      <node ref="TP11" pin="1" />
+    </net>
+    <net code="8" name="PV_SENSE">
+      <node ref="R5" pin="2" />
+      <node ref="U2" pin="5" />
+      <node ref="C7" pin="1" />
+    </net>
+    <net code="9" name="RF_50">
+      <node ref="L2" pin="1" />
+      <node ref="C14" pin="1" />
+      <node ref="TP12" pin="1" />
+      <node ref="C19" pin="2" />
+    </net>
+    <net code="10" name="RF_ANT">
+      <node ref="U2" pin="26" />
+      <node ref="L3" pin="1" />
+    </net>
+    <net code="11" name="SPI_CS">
+      <node ref="U2" pin="15" />
+      <node ref="R10" pin="2" />
+    </net>
+    <net code="12" name="SPI_MISO">
+      <node ref="U2" pin="14" />
+      <node ref="R9" pin="2" />
+    </net>
+    <net code="13" name="SPI_MOSI">
+      <node ref="U2" pin="12" />
+      <node ref="R8" pin="2" />
+    </net>
+    <net code="14" name="SPI_SCK">
+      <node ref="U2" pin="11" />
+      <node ref="R7" pin="2" />
+    </net>
+    <net code="15" name="SWDCLK">
+      <node ref="U2" pin="23" />
+      <node ref="TP2" pin="1" />
+    </net>
+    <net code="16" name="SWDIO">
+      <node ref="U2" pin="22" />
+      <node ref="TP1" pin="1" />
+    </net>
+    <net code="17" name="TLIN_DIV_ON">
+      <node ref="U1" pin="11" />
+      <node ref="U2" pin="13" />
+    </net>
+    <net code="18" name="TLIN_PV">
+      <node ref="U1" pin="10" />
+      <node ref="R5" pin="1" />
+      <node ref="C6" pin="1" />
+    </net>
+    <net code="19" name="TLIN_nINT">
+      <node ref="U1" pin="8" />
+      <node ref="U2" pin="20" />
+      <node ref="R4" pin="2" />
+    </net>
+    <net code="20" name="TLIN_nRST">
+      <node ref="U1" pin="3" />
+      <node ref="U2" pin="21" />
+      <node ref="R3" pin="2" />
+    </net>
+    <net code="21" name="UART_RX">
+      <node ref="U2" pin="17" />
+      <node ref="R12" pin="2" />
+    </net>
+    <net code="22" name="UART_TX">
+      <node ref="U2" pin="18" />
+      <node ref="R11" pin="2" />
+    </net>
+    <net code="23" name="VBUS_12V_RAW">
+      <node ref="J1" pin="1" />
+      <node ref="U1" pin="20" />
+      <node ref="D1" pin="1" />
+      <node ref="D2" pin="1" />
+      <node ref="C1" pin="1" />
+      <node ref="R13" pin="1" />
+      <node ref="TP6" pin="1" />
+    </net>
+    <net code="24" name="VCC_3V3">
+      <node ref="U1" pin="2" />
+      <node ref="C3" pin="1" />
+      <node ref="C4" pin="1" />
+      <node ref="R2" pin="1" />
+      <node ref="R3" pin="1" />
+      <node ref="R4" pin="1" />
+      <node ref="FB1" pin="1" />
+      <node ref="TP8" pin="1" />
+    </net>
+    <net code="25" name="VDD_nRF">
+      <node ref="U2" pin="9" />
+      <node ref="U2" pin="19" />
+      <node ref="U2" pin="31" />
+      <node ref="U2" pin="40" />
+      <node ref="FB1" pin="2" />
+      <node ref="C8" pin="1" />
+      <node ref="C9" pin="1" />
+      <node ref="C10" pin="1" />
+      <node ref="L1" pin="2" />
+      <node ref="TP4" pin="1" />
+      <node ref="C20" pin="1" />
+      <node ref="C21" pin="1" />
+      <node ref="C22" pin="1" />
+      <node ref="TP9" pin="1" />
+    <node ref="C27" pin="1" />
+      <node ref="C28" pin="1" />
+      </net>
+    <net code="26" name="VSUP_PROT">
+      <node ref="D1" pin="2" />
+      <node ref="U1" pin="1" />
+      <node ref="C2" pin="1" />
+      <node ref="R13" pin="2" />
+      <node ref="TP7" pin="1" />
+    </net>
+    <net code="27" name="XC1">
+      <node ref="U2" pin="29" />
+      <node ref="Y1" pin="1" />
+      <node ref="C23" pin="1" />
+    </net>
+    <net code="28" name="XC2">
+      <node ref="U2" pin="30" />
+      <node ref="Y1" pin="2" />
+      <node ref="C24" pin="1" />
+    </net>
+    <net code="29" name="XL1">
+      <node ref="U2" pin="1" />
+      <node ref="Y2" pin="1" />
+      <node ref="C25" pin="1" />
+    </net>
+    <net code="30" name="XL2">
+      <node ref="U2" pin="2" />
+      <node ref="Y2" pin="2" />
+      <node ref="C26" pin="1" />
+    </net>
+    <net code="31" name="nRF_RESET">
+      <node ref="TP3" pin="1" />
+      <node ref="R6" pin="1" />
+    </net>
+    <net code="32" name="nRF_nRESET">
+      <node ref="R6" pin="2" />
+      <node ref="U2" pin="25" />
+      <node ref="C13" pin="1" />
+    </net>
+    <net code="33" name="SPI_SCK_TLIN">
+      <node ref="U1" pin="4" />
+      <node ref="R7" pin="1" />
+    </net>
+    <net code="34" name="SPI_MOSI_TLIN">
+      <node ref="U1" pin="6" />
+      <node ref="R8" pin="1" />
+    </net>
+    <net code="35" name="SPI_MISO_TLIN">
+      <node ref="U1" pin="5" />
+      <node ref="R9" pin="1" />
+    </net>
+    <net code="36" name="SPI_CS_TLIN">
+      <node ref="U1" pin="7" />
+      <node ref="R10" pin="1" />
+      <node ref="R2" pin="2" />
+    </net>
+    <net code="37" name="UART_TX_TLIN">
+      <node ref="U1" pin="12" />
+      <node ref="R11" pin="1" />
+    </net>
+    <net code="38" name="UART_RX_TLIN">
+      <node ref="U1" pin="13" />
+      <node ref="R12" pin="1" />
+    </net>
+    <net code="39" name="RF_N1">
+      <node ref="L3" pin="2" />
+      <node ref="C16" pin="1" />
+      <node ref="L4" pin="1" />
+    </net>
+    <net code="40" name="RF_N2">
+      <node ref="L4" pin="2" />
+      <node ref="C17" pin="1" />
+      <node ref="L5" pin="1" />
+    </net>
+    <net code="41" name="RF_N3">
+      <node ref="L5" pin="2" />
+      <node ref="C18" pin="1" />
+      <node ref="C19" pin="1" />
+    </net>
+  </nets>
+</export>
