@@ -34,8 +34,16 @@
 - For analyzing Excel documents, use `uv run --with openpyxl python -c "import openpyxl ..."`.
 - For working with electronic design files, use the `kicad-cli` in your `$PATH`.
 - For working with PCB auto-routing `.dsn` (Specctra) files, use the `freerouting-cli` CLI in your `$PATH`.
+- Use the `kicad_sch_api` Python library to manipulate
 
 ## Capabilities
 - `.png`/`.jpeg`/`.gif`/`.webp` LLM perception enabled.
 - `.pdf` LLM perception enabled.
 - Unrestricted internet access enabled.
+
+# Techniques
+
+## Developing KiCad schematic files
+1. Parse/edit schematics with the `kicad-sch-api` Python library.
+2. Validate with `kicad-cli sch erc ... --exit-code-violations` in scripts/CI.
+3. Export artifacts (PDF/SVG/netlist/BOM) with `kicad-cli` for deterministic outputs.
